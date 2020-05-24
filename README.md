@@ -2,8 +2,8 @@
 
 Commands to deploy these configuration files:
 
-    mkdir -p ~/vim
-    cd ~/vim/
+    cd ~
     git clone https://github.com/bbrowning1/vim
-    ln vim/vimrc ~/.vimrc
+    mv vim .vim
+    ln .vim/vimrc .vimrc
 
