@@ -1,15 +1,12 @@
 set nocompatible        " don't try to be VI compatible
 
 "next line help plugins load corretly when it is turned back on beloj
-"filetype off
-
+filetype off
 "TODO: Load plugins here (pathogen or vundle)
+filetype plugin indent on
 
 let mapleader=","       " defin leader key
 
-" Attempt to determine the type of a file. Use this to allow intelligent
-" auto-indenting for each filetype, and for plugins that are filetype specific.
-" filetype plugin indent on
 " 
 " Colors
 set t_Co=256
@@ -48,7 +45,8 @@ set showcmd             " show command in bottom bar
 set title               " show filename
 set number              " show line numbers
 set cursorline          " highlight current line
-set ruler               " show curser position in bottom bar
+set ruler               " show file stats
+set hidden              " allow switching buffers without writing old buffer
 set modelines=0         " disabled to improve security
 set encoding=utf-8      " set encoding inside VIM to utf-8
 set ffs=unix,dos,mac    " detect end-of-line character(s) for these systems
@@ -56,7 +54,8 @@ set scrolloff=3         " min lines from curser to top/bottom of screen
 set matchpairs+=<:>     " use % to jump between pairs
 set laststatus=1        " show status line if there is more than one window
 set showmatch           " show matching bracket if on screen
-set autoindent          " when opening new line, keep same indent as current line
+set autoindent          " when opening new line, keep same indent current line
+" set undofile
 
 "Allow backspacing over indent, line breaks, and start of insert
 set backspace=indent,eol,start
