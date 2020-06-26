@@ -12,7 +12,7 @@ let mapleader=","       " defin leader key
 set t_Co=256
 colorscheme molokai     " set colorscheme
 set colorcolumn=80      " set vertical guide
-highlight ColorColumn ctermbg=238 guibg=#23272
+"highlight ColorColumn ctermbg=238 guibg=#23272
 
 syntax on               " enable syntax processing
 
